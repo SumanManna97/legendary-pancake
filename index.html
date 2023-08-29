@@ -1,0 +1,214 @@
+<html>
+<style>
+*{
+margin:0;
+padding:0;
+font-family: 'Ubuntu', sans-serif;
+}
+.header{
+min-height:100vh;
+width:100%;
+background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/exam2.jpg);
+background-postion:center;
+background-size:cover;
+postion:relative;
+}
+nav{
+display:flex;
+padding:2% 6%;
+justify-content:space-between;
+align-items:center;
+}
+nav img{
+width:120px;
+}
+.nav-links{
+flex:1;
+text-align:right;
+}
+.nav-links ul li{
+list-style:none;
+display:inline-block;
+padding:8px 12px;
+position:relative;
+}
+.nav-links ul li a{
+color:white;
+text-decoration:none;
+font-size:13px;
+}
+.nav-links ul li::after{
+content:'';
+width:0%;
+height:3px;
+background:#f44336;
+display:block;
+margin:auto;
+transition:0.5s;
+}
+.nav-links ul li:hover::after{
+width:100%;
+}
+.text-box{
+width:90%;
+color:white;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+}
+.text-box h1{
+font-size:65px;
+}
+.text-box p{
+margin:10px 0 40px;
+font-size:18px;
+color:white;
+}
+.visit_btn{
+display:inline-block;
+text-decoration:none;
+color:white;
+border:1px solid white;
+padding:12px 34px;
+font-size:15px;
+background:transparent;
+position:relative;
+cursor:pointer;
+}
+.visit_btn:hover{
+border:1px solid cyan;
+background:cyan;
+transition:1s;
+}
+nav .fa{
+display:none;
+}
+.course{
+width=80%;
+margin=auto;
+text-align:center;
+padding-top:100px;
+}
+h1{
+font-size:36px;
+font-weight:600;
+}
+p{
+color:#777;
+font-size:16px;
+font-weight:300;
+line-height:22px;
+padding:15px;
+}
+.row{
+margin-top:5%;
+display:flex;
+justify-content:space-between;
+}
+.column{
+flex-basis:48%;
+background:lightblue;
+border-radius:10px;
+margin-bottom:5%
+padding:20px 12px;
+box-sizing:border-box;
+transition:0.5s;
+}
+h3{
+text-align:center;
+font-weight:600;
+margin:10px 0;
+}
+.column:hover{
+box-shadow:0 0 20px 0px rgba(0,0,0,0.7);
+}
+.cta{
+margin:100px auto;
+width:80%;
+background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/exam5.jpg);
+background-position:center;
+border-radius:10px;
+text-align:center;
+padding:100px 0;
+}
+.cta h1{
+color:white;
+margin-bottom:100px;
+}
+.footer{
+width:100%;
+text-align:center;
+padding:30px 0;
+}
+.footer h4{
+margin-bottom:25px;
+margin-top:20px;
+font-weight:600;
+}
+.footer a{
+text-decoration:none;
+display:inline-block;
+text-decoration:none;
+color:#9B2335;
+border:1px solid white;
+padding:12px 34px;
+font-size:15px;
+background:#DFCFBE;
+position:relative;
+cursor:pointer
+}
+</style>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="header">
+<nav>
+<a href="index.html"><img src="images/logo11.png"></a>
+<div class="nav-links" id="navLinks">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="">ABOUT</a></li>
+<li><a href="log_in.html">LOGIN</a></li>
+<li><a href="signup.html">SIGNUP</a></li>
+</ul>
+</div>
+</nav>
+<div class="text-box">
+<h1>A Complete Online Examination Portal</h1>
+<p>Online examinations, sometimes referred as e-examinations, are the examinations conducted through the internet or in an intranet for a remote candidate(s).<br> Most of the examinations issue results as the candidate finish the examination, when there is an answer processing module also included with the system .</p>
+<a href="" class="visit_btn">Visit us to know more</a>
+</div>
+</section>
+<section class="course">
+<h1>Subjects Available</h1>
+<br>
+
+<p>Online (distance) education is increasingly used as supplementary education. It is perfect for those who want to get a second degree, pass retraining or improve their skills. It is not difficult to study online if a person already has accumulated knowledge base, which he received as usual student, and has the basics of the profession.</p>
+<div class="row">
+<div class="column">
+<h3>Web Development with PHP and MySQL</h3>
+<p>PHP, as a scripting language, is popular among web developers because of its ability to interact with database systems including Oracle and MySQL.</p>
+</div>
+<div class="column">
+<h3>Core Java</h3>
+<p>Core Java is the part of Java SE where the developers develop desktop-based applications by using the basic concepts of Java where JDK is a quite familiar Java SE implementation.</p>
+</div>
+</div>
+</section>
+<section class="cta">
+<h1>Enroll Now</h1>
+<a href="" class="visit_btn">Contact Us</a>
+</section>
+<section class="footer">
+<h3>About Us</h3>
+<p>Pioneers in education from all over India teach at our partnered institutions and this platform is a new implemntation of exams and assesment held offline previously.</p>
+<br>
+<a href="adminlogin.html">ADMIN</a>
+</section>
+</body>
+</html>
